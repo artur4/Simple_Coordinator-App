@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="5Jp-Cv-d0I">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="v5I-ay-pNa" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lNj-xR-iTV"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgQ-Sb-fuL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ypc-hD-fwj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmi-0D-l5V">
+                                <rect key="frame" x="172" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="go:" destination="v5I-ay-pNa" eventType="touchUpInside" id="H6r-fK-FM3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rmi-0D-l5V" firstAttribute="centerY" secondItem="Ypc-hD-fwj" secondAttribute="centerY" id="hlh-r1-rYr"/>
+                            <constraint firstItem="rmi-0D-l5V" firstAttribute="centerX" secondItem="Ypc-hD-fwj" secondAttribute="centerX" id="lhd-73-URE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="sgv-tq-HLn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typhoonKey" value="settingViewController"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKH-n5-Y5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="276.61169415292358"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="g5H-lM-83y">
+            <objects>
+                <viewController storyboardIdentifier="DetailSettingViewController" id="Nua-FL-ekd" customClass="DetailSettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="14A-Os-rNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="LOI-Og-xAl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XJq-t9-o5G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="w0k-gb-Tv9"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typhoonKey" value="detailSettingViewController"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3h-8j-KoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="277"/>
+        </scene>
+    </scenes>
+</document>
